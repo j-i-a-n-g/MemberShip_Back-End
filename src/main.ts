@@ -2,10 +2,12 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common/pipes';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
 import helmet from 'helmet';
 import { ResponseInterceptor } from './common/interceptors/response.interceptor';
 const path = require('path')
 import { NestExpressApplication } from '@nestjs/platform-express/interfaces';
+import { HttpExceptionFilter } from './common/filter/http-exception.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
@@ -29,6 +31,8 @@ async function bootstrap() {
     }
   }))
   app.useGlobalInterceptors(new ResponseInterceptor())
+  const loggerService = app.get(WINSTON_MODULE_NEST_PROVIDER);
+  app.useGlobalFilters(new HttpExceptionFilter(loggerService))
   app.useStaticAssets(path.join(process.cwd(), `/public`), { prefix: '' })
   await app.listen(9981);
 }

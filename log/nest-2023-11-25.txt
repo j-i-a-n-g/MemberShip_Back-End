@@ -1,0 +1,42 @@
+[react_project] Info	2023/11/25 22:59:44 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /user/login
+     Request Time: Sat Nov 25 2023 22:59:44 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 密码错误
+    at UserService.create (E:\react项目\node\src\user\user.service.ts:42:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +3ms
+[react_project] Info	2023/11/25 23:00:06 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /user/login
+     Request Time: Sat Nov 25 2023 23:00:06 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 密码错误
+    at UserService.create (E:\react项目\node\src\user\user.service.ts:42:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +2ms
+[react_project] Info	2023/11/25 23:00:25 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /user/login
+     Request Time: Sat Nov 25 2023 23:00:25 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 密码错误
+    at UserService.create (E:\react项目\node\src\user\user.service.ts:42:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +1ms

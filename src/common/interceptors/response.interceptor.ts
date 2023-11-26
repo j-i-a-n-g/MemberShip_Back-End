@@ -4,6 +4,10 @@ import { Observable, map } from 'rxjs';
 interface Response<T> {
   data: T
 }
+interface ResponseData {
+  data: Object | String,
+  msg: String
+}
 
 @Injectable()
 export class ResponseInterceptor<T>
