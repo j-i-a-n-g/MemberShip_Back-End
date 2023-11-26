@@ -5,6 +5,7 @@ import { generateRandomString } from 'src/common/method';
 import { UserEntity } from './entities/user.entity';
 import { InjectRepository } from '@nestjs/typeorm'
 import { Repository } from 'typeorm';
+const jwt = require('jsonwebtoken');
 
 @Injectable()
 export class UserService {
@@ -12,6 +13,7 @@ export class UserService {
     @InjectRepository(UserEntity)
     private readonly userEntity: Repository<UserEntity>
   ) { }
+  // 创建或登录
   async create(createUserDto: CreateUserDto) {
     try {
       let { username, password } = createUserDto;
@@ -26,24 +28,35 @@ export class UserService {
       const user: UserEntity = await this.userEntity.findOne({
         where: { username }
       })
+      let token = "Bearer " + jwt.sign({ ...createObj }, "password", { expiresIn: "3 days" })
+      console.log(token)
       if (user) {
         if (user.password !== password) {
           throw new HttpException('密码错误', 500)
         }
         return {
-          data: user,
+          data: {
+            user,
+            token
+          },
           message: '登录成功'
         }
       }
       let result: UserEntity = await this.userEntity.create(createObj);
       await this.userEntity.save(result)
-      return "注册成功"
+      return {
+        data: {
+          user,
+          token,
+        },
+        message: '注册成功'
+      }
     } catch (error) {
       throw new HttpException(error, 500)
     }
   }
 
-  findAll() {
+  autoLogin() {
     return `This action returns all user`;
   }
 

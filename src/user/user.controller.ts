@@ -1,7 +1,8 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Request, HttpException } from '@nestjs/common';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
+const jwt = require('jsonwebtoken');
 
 @Controller('user')
 export class UserController {
@@ -14,9 +15,15 @@ export class UserController {
     return this.userService.create(createUserDto);
   }
 
-  @Get()
-  findAll() {
-    return this.userService.findAll();
+  @Get('autoLogin')
+  autoLogin(@Request() req) {
+    let token = req.headers["authorization"].split(" ")[1];
+    let user = jwt.verify(token, "password");
+    if (user) {
+      return { data: user }
+    } else {
+      throw new HttpException('登录过期，请重新登录', 500)
+    }
   }
 
   @Get(':id')

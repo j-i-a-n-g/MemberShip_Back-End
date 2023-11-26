@@ -1,0 +1,50 @@
+[react_project] Info	2023/11/26 19:59:23 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /user/login
+     Request Time: Sun Nov 26 2023 19:59:23 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: Expected "payload" to be a plain object.
+    at UserService.create (E:\react项目\node\src\user\user.service.ts:46:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +4ms
+[react_project] Info	2023/11/26 20:03:15 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /user/login
+     Request Time: Sun Nov 26 2023 20:03:15 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 密码错误
+    at UserService.create (E:\react项目\node\src\user\user.service.ts:54:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +4ms
+[react_project] Info	2023/11/26 20:10:52 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /autoLogin
+     Request Time: Sun Nov 26 2023 20:10:52 GMT+0800 (中国标准时间)
+     Status Code: 404
+     Content: NotFoundException: Cannot GET /autoLogin
+    at callback (E:\react项目\node\node_modules\@nestjs\core\router\routes-resolver.js:77:19)
+    at E:\react项目\node\node_modules\@nestjs\core\router\router-proxy.js:9:23
+    at Layer.handle [as handle_request] (E:\react项目\node\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\react项目\node\node_modules\express\lib\router\index.js:328:13)
+    at E:\react项目\node\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (E:\react项目\node\node_modules\express\lib\router\index.js:346:12)
+    at next (E:\react项目\node\node_modules\express\lib\router\index.js:280:10)
+    at urlencodedParser (E:\react项目\node\node_modules\body-parser\lib\types\urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (E:\react项目\node\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\react项目\node\node_modules\express\lib\router\index.js:328:13)
+     ---------------------------------------------------------------------------------
+
+
+     +3ms
