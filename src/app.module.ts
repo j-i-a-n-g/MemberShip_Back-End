@@ -8,6 +8,8 @@ import { utilities as nestWinstonModuleUtilities } from 'nest-winston'
 import * as winston from 'winston';
 import { join } from 'path';
 import { UserModule } from './user/user.module';
+import { RoleModule } from './role/role.module';
+import { PermissionModule } from './permission/permission.module';
 const moment = require('moment')
 
 @Module({
@@ -50,6 +52,8 @@ const moment = require('moment')
       ],
     }),
     UserModule,
+    RoleModule,
+    PermissionModule,
   ],
   controllers: [AppController],
   providers: [AppService],
