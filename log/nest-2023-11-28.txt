@@ -1,0 +1,126 @@
+[react_project] Info	2023/11/28 21:26:14 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /role/createRole
+     Request Time: Tue Nov 28 2023 21:26:14 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 角色已存在
+    at RoleService.create (E:\react项目\node\src\role\role.service.ts:27:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +3ms
+[react_project] Info	2023/11/28 21:26:19 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /role/createRole
+     Request Time: Tue Nov 28 2023 21:26:19 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 角色已存在
+    at RoleService.create (E:\react项目\node\src\role\role.service.ts:27:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +1ms
+[react_project] Info	2023/11/28 21:26:39 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /role/createRole
+     Request Time: Tue Nov 28 2023 21:26:39 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 角色已存在
+    at RoleService.create (E:\react项目\node\src\role\role.service.ts:27:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +1ms
+[react_project] Info	2023/11/28 21:26:48 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /role/createRole
+     Request Time: Tue Nov 28 2023 21:26:48 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 角色已存在
+    at RoleService.create (E:\react项目\node\src\role\role.service.ts:27:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +1ms
+[react_project] Info	2023/11/28 21:26:52 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /role/createRole
+     Request Time: Tue Nov 28 2023 21:26:52 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 角色已存在
+    at RoleService.create (E:\react项目\node\src\role\role.service.ts:27:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +1ms
+[react_project] Info	2023/11/28 21:28:14 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /role/createRole
+     Request Time: Tue Nov 28 2023 21:28:14 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 角色已存在
+    at RoleService.create (E:\react项目\node\src\role\role.service.ts:27:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +1ms
+[react_project] Info	2023/11/28 21:28:46 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /role/createRole
+     Request Time: Tue Nov 28 2023 21:28:46 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 角色已存在
+    at RoleService.create (E:\react项目\node\src\role\role.service.ts:27:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +1ms
+[react_project] Info	2023/11/28 21:29:09 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /role/createRole
+     Request Time: Tue Nov 28 2023 21:29:09 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 角色已存在
+    at RoleService.create (E:\react项目\node\src\role\role.service.ts:27:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +1ms
+[react_project] Info	2023/11/28 21:30:46 
+
+
+     ---------------------------------------------------------------------------------
+     Request URL: /role/createRole
+     Request Time: Tue Nov 28 2023 21:30:46 GMT+0800 (中国标准时间)
+     Status Code: 500
+     Content: HttpException: 角色已存在
+    at RoleService.create (E:\react项目\node\src\role\role.service.ts:27:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+     ---------------------------------------------------------------------------------
+
+
+     +2ms

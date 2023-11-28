@@ -14,6 +14,9 @@ export class RoleEntity {
   @Column()
   roleDesc: string
 
+  @Column()
+  roleLevel: string
+
   @CreateDateColumn(
     {
       type: 'timestamp',

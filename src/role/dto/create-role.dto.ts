@@ -13,6 +13,10 @@ export class CreateRoleDto {
 
   @ApiProperty()
   @IsOptional()
+  roleLevel: string;
+
+  @ApiProperty()
+  @IsOptional()
   createTime: string;
 
   @ApiProperty()
